@@ -1,116 +1,164 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Atayağız Uslu · CV / Portfolio</title>
-  <meta name="description" content="Atayağız Uslu — SAP Fiori/ABAP ve web geliştirme odaklı yazılım geliştirici.">
+  <title>Atayağız Uslu · Software Developer</title>
+  <meta name="description" content="Software Developer focused on SAP Fiori/ABAP and modern web development.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Atayağız Uslu · CV / Portfolio">
-  <meta property="og:description" content="SAP & Web Geliştirme · Proje deneyimi, beceriler, iletişim">
+  <meta property="og:title" content="Atayağız Uslu · Software Developer">
+  <meta property="og:description" content="SAP & Web Development · Experience, skills, and contact">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/avatar.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="IMG_7168.heic" alt="Atayağız Uslu avatar">
-      <div>
-        <h1>Atayağız Uslu</h1>
-        <p class="muted">SAP Fiori/ABAP · Web Geliştirme</p>
-        <div class="actions">
-          <a class="btn" href="mailto:atayaz.uslu@gmail.com">E-posta</a>
-          <a class="btn" href="tel:+905317669489">Ara</a>
-          <a class="btn" href="https://github.com/">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/">LinkedIn</a>
-        </div>
-      </div>
-    </header>
+  <div class="bg"></div>
 
-    <section class="section">
-      <h2>Özet</h2>
-      <p>2023’te Kocaeli Üniversitesi’nden mezun oldum. 3+ yıllık yazılım geliştirme deneyimimin 1.5 yılı Full-Stack SAP geliştirme üzerine. Sosyal medya ve web geliştirme alanlarında da deneyimliyim. İş süreçlerini optimize eden, verimliliği artıran çözümler üretmeye odaklanıyorum.</p>
-    </section>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <img class="avatar" src="assets/avatar.svg" alt="Atayagiz Uslu avatar" />
+        <div class="brand-text">
+          <strong>Atayağız Uslu</strong>
+          <span>Software Developer — SAP Fiori/ABAP & Web</span>
+        </div>
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
 
-    <section class="section">
-      <h2>Deneyim</h2>
-      <div class="list">
-        <div class="item">
-          <strong>Software Developer (Freelance)</strong> · Geniş Ekran Reklam Ajansı
-          <div class="muted"><small>Mayıs 2024 – Günümüz</small></div>
-          <ul>
-            <li>PHP (Laravel) ile ölçeklenebilir ve dinamik web projeleri geliştirdim.</li>
-            <li>Kullanıcı odaklı, performanslı ve güvenli uygulamalar tasarladım.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <strong>SAP Fiori/ABAP Consultant</strong> · Aegeansoft
-          <div class="muted"><small>Eylül 2023 – Aralık 2024</small></div>
-          <ul>
-            <li>Müşterilerle ihtiyaç analizi yaparak özelleştirilmiş SAP çözümleri geliştirdim.</li>
-            <li>Mevcut sistemlerin optimizasyonu ve bakımında aktif rol aldım.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <strong>Junior Software Engineer</strong> · Optimize Technologies
-          <div class="muted"><small>Haziran 2023 – Ağustos 2023</small></div>
-          <ul>
-            <li>React ve Python Django ile full-stack geliştirme deneyimi.</li>
-            <li>Agile metodolojisi ile proje süreçlerine katkı.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <strong>Junior Software Engineer (QA Tester)</strong> · SmartICT
-          <div class="muted"><small>Temmuz 2022 – Eylül 2022</small></div>
-          <ul>
-            <li>Java Selenium ile test otomasyonu geliştirdim.</li>
-          </ul>
-        </div>
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero card">
+      <h1>Hello, I’m Atayağız.</h1>
+      <p class="lead">
+        I build reliable, user-focused software. 1.5+ years in full-stack SAP development (Fiori/ABAP),
+        plus hands-on experience with modern web stacks. Passionate about improving business processes and developer experience.
+      </p>
+      <div class="actions">
+        <a class="btn" href="mailto:atayaz.uslu@gmail.com">Email</a>
+        <a class="btn" href="tel:+905317669489">Call</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
 
-    <section class="section grid-2">
-      <div>
-        <h2>Eğitim</h2>
-        <p>2019 – 2023 · Lisans, Kocaeli Üniversitesi, Teknoloji Fakültesi – Bilişim Sistemleri Mühendisliği (GNO: 3.11/4.00)</p>
+    <!-- Experience -->
+    <section class="section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="role">Software Developer (Freelance)</span>
+            <span class="company">Geniş Ekran Creative Agency</span>
+            <span class="dates">May 2024 – Present</span>
+          </div>
+          <ul class="bullets">
+            <li>Built scalable, dynamic web projects using PHP (Laravel).</li>
+            <li>Delivered secure, performant applications to support digital transformation.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="role">SAP Fiori/ABAP Consultant</span>
+            <span class="company">Aegeansoft</span>
+            <span class="dates">Sep 2023 – Dec 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Gathered requirements and implemented tailored SAP solutions.</li>
+            <li>Maintained and optimized existing systems to increase efficiency.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="role">Junior Software Engineer</span>
+            <span class="company">Optimize Technologies</span>
+            <span class="dates">Jun 2023 – Aug 2023</span>
+          </div>
+          <ul class="bullets">
+            <li>Full-stack practice with React and Python Django during compulsory internship.</li>
+            <li>Contributed within Agile workflows.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="role">Junior Software Engineer (QA Tester)</span>
+            <span class="company">SmartICT</span>
+            <span class="dates">Jul 2022 – Sep 2022</span>
+          </div>
+          <ul class="bullets">
+            <li>Test automation with Java Selenium; strengthened OOP and Java fundamentals.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills & Education -->
+    <section class="grid">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="chips">
+          <span class="chip">SAPUI5</span>
+          <span class="chip">SAP ABAP</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PHP</span>
+        </div>
       </div>
-      <div>
-        <h2>Diller</h2>
-        <p>İngilizce (B1+)</p>
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>Kocaeli University</strong> — B.S. in Information Systems Engineering</p>
+        <p>2019 – 2023 · GPA: 3.11/4.00</p>
+        <h3 style="margin-top:12px">Languages</h3>
+        <p>English (B1+)</p>
       </div>
     </section>
 
+    <!-- Certificates -->
     <section class="section">
-      <h2>Beceriler</h2>
-      <div class="chips">
-        <span class="chip">SAPUI5</span>
-        <span class="chip">SAP ABAP</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">PHP</span>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Sertifikalar</h2>
-      <ul>
-        <li>BTK Akademi – Algorithms and Data Structures (Advanced Level)</li>
-        <li>Udemy – The Complete SAP S/4HANA Bootcamp 2023</li>
-        <li>Udemy – SAP for Beginners | SAP ERP (uygulamalı)</li>
-        <li>Udemy – SAP ABAP Programming For Beginners – Online Training</li>
+      <h2>Certificates</h2>
+      <ul class="bullets">
+        <li>BTK Academy — Algorithms & Data Structures (Advanced)</li>
+        <li>Udemy — The Complete SAP S/4HANA Bootcamp 2023</li>
+        <li>Udemy — SAP for Beginners | SAP ERP (hands-on)</li>
+        <li>Udemy — SAP ABAP Programming for Beginners</li>
       </ul>
     </section>
 
+    <!-- References -->
     <section class="section">
-      <h2>Referanslar</h2>
-      <ul>
-        <li>Özgür DUMAN – SAP Retail Project Manager, Azersun Holding · +90 533 435 71 40</li>
-        <li>Ali İlker Topçu – Senior SAP Developer, Carbon Consulting · +90 549 822 27 40</li>
+      <h2>References</h2>
+      <ul class="bullets">
+        <li>Özgür Duman — SAP Retail Project Manager, Azersun Holding · +90 533 435 71 40</li>
+        <li>Ali İlker Topçu — Senior SAP Developer, Carbon Consulting · +90 549 822 27 40</li>
       </ul>
     </section>
 
-    <p class="footer">Son güncelleme: August 11, 2025 · © <span id="yil"></span> Atayağız Uslu</p>
-  </div>
-  <script>document.getElementById('yil').textContent = new Date().getFullYear();</script>
+    <footer class="footer">
+      <small>Last updated: Aug 2025 · © <span id="year"></span> Atayağız Uslu</small>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme: respect system + toggle
+    const root = document.documentElement;
+    const key = 'theme';
+    const saved = localStorage.getItem(key);
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = saved || (prefersDark ? 'dark' : 'light');
+    root.dataset.theme = initial;
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem(key, next);
+    });
+  </script>
 </body>
 </html>
